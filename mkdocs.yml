@@ -2,4 +2,4 @@ site_name: Afero Developer Portal
 theme: readthedocs
 markdown_extensions:
   - admonition
-  
+
