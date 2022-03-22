@@ -29,7 +29,8 @@ The two attributes are described below:
     *   \[2-5\] - Little-endian unsigned long containing an Epoch timestamp (UTC) for “next” offset validity
     *   \[6-7\] - Little-endian signed int containing the “next” local timezone offset from UTC in minutes
     
-!!! note UTC Offset is determined by the Location attributes set (by you) for ASR and **are not dynamic** in any way. The UTC Offset can and will be wrong if the Location in the device configuration is incorrect. You can set the correct Location for your Afero device using the Afero mobile app, or by using the Afero Inspector developer tool at [https://inspector.afero.io](https://inspector.afero.io).
+!!! note
+    UTC Offset is determined by the Location attributes set (by you) for ASR and **are not dynamic** in any way. The UTC Offset can and will be wrong if the Location in the device configuration is incorrect. You can set the correct Location for your Afero device using the Afero mobile app, or by using the Afero Inspector developer tool at [https://inspector.afero.io](https://inspector.afero.io).
     
       
     

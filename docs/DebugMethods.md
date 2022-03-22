@@ -3,7 +3,8 @@ Useful Debugging Methods
 
 This section includes a couple useful methods that you can copy/paste into your code. You can see these methods used in the afBlink example.
 
-!!! note Due to limitations in available memory, if you’re working with an Arduino Uno, it’s not likely you’ll be able to use these methods fully. If it’s possible for you to use a board with more memory, such as a Teensy, you’ll have a great deal more freedom, including the use of these debug methods. If you are restricted to an Uno or system with similar available memory, you may be able to include a subset of these calls, and get more reliable performance by reducing the ATTR\_PRINT\_MAX\_VALUE\_LEN.
+!!! note
+    Due to limitations in available memory, if you’re working with an Arduino Uno, it’s not likely you’ll be able to use these methods fully. If it’s possible for you to use a board with more memory, such as a Teensy, you’ll have a great deal more freedom, including the use of these debug methods. If you are restricted to an Uno or system with similar available memory, you may be able to include a subset of these calls, and get more reliable performance by reducing the ATTR\_PRINT\_MAX\_VALUE\_LEN.
 
   
 ```

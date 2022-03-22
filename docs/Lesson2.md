@@ -3,7 +3,8 @@ Tutorial 2: Creating a Device Profile
 
 Before you start, we assume that you’ve already run through [Tutorial 1: Linking Modulo](Lesson1). If not, please start there.
 
-!!! note This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for the Modulo-1B.
+!!! note
+    This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for the Modulo-1B.
 
 
 1.  If you haven’t already, download the Afero Profile Editor, for [Windows](http://cdn.afero.io/latest-ape/win) or [macOS](http://cdn.afero.io/latest-ape/mac). Open and sign in to the Profile Editor. The Startup window appears:
@@ -16,7 +17,8 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
     4.  Back in the Afero Profile Editor Startup window, select the Open button, navigate to the directory where you unzipped the project, and select the directory that holds the Modulo project you want to use in this lesson.
 3.  Once the project is open, click Device Type in the Navigation pane in the left of the window. To be sure we’re all starting in the same view, your window should look something like this: ![Device Type Pane](static/custom/images/Mod2_DeviceType.png)
     
-    !!! Notice the Module Type of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the New Profile window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
+   !!!! note
+        Notice the Module Type of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the New Profile window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
     
       
 In the Device Type view, you can set the device name, type a detailed device description, and set the device icon. Of these items, only the icon will be visible to the end-user. Notice the Preview panel on the right of the view – it shows the selected device icon as it will appear in the mobile app.
