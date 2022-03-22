@@ -2,4 +2,5 @@ site_name: Afero Developer Portal
 theme: readthedocs
 markdown_extensions:
   - admonition
-
+  - toc:       
+      toc_depth: '2-2'
