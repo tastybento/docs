@@ -21,11 +21,11 @@ Add Your Information
         <tr>
             <td>Device Type Name</td>
             <td><p>This name is a string; by default it assumes the name you gave it when creating the project, but you can change it here. Note that if you do change it here, the project name displayed in Profile Editor will also update to reflect the new name. Here are some important things to know about Device Type:</p>
-                <ul class="af-ul">
+                <ul>
                     <li><p>In the mobile app, the default name given the device is the Device Type Name. This name will be used only initially as it can be changed to a “friendly name” by the end-user when adding the device to their account, or by editing the device name on the device Settings screen. You, as the developer, can also change this friendly name on the Publish window. So use a descriptive name here that makes sense to you and your end-users. Also, the friendly name is what appears in the Inspector tool to identify your devices.</p>
                     <p>Note that if the end-user does change the friendly name on the mobile app, the Device Type Name itself will not change. The only place you can change the Device Type Name is in this field; and only after the Profile has been published does any change you make reflect on the Publish window and in the Afero system.</p></li>
                     <li>The Device Type is an important identifier. Once you publish a Profile with a given Device Type, an ID is associated with the Device Type that remains unchanged as long as the Device Type is active. As pointed out above, you can always rename your Device Type using this field, but the <code>devicetypeID</code> will not change.</li>
-                    <li>Device Type names must be unique across your projects. (Read more in  <a id="1549412226.68" href="/SelectProject#DOC-158">Before You Proceed</a>.)</li>
+                    <li>Device Type names must be unique across your projects. (Read more in  [Before You Proceed](before-you-proceed).)</li>
                     <li>The Device Type is used by the OTA Manager to associate an MCU firmware Image Type with devices.</li>
                 </ul>
             </td>
@@ -62,8 +62,8 @@ Add Your Information
         
 3.  Once you’ve defined the Device Type, you’ll want to save the definition.
     
-    *   Clicking Cancel reverts any changes you made on the page.
-    *   Clicking Save initiates validation of the new data and, if validation is successful, the data is saved to your local project directory.
+   *   Clicking Cancel reverts any changes you made on the page.
+   *   Clicking Save initiates validation of the new data and, if validation is successful, the data is saved to your local project directory.
     
 !!!! note
      Every time you save, your data is validated. If validation fails for any reason, an error message will appear then move to the left. Click the error description in the message to highlight the field that needs correcting.
