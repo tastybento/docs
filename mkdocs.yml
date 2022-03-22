@@ -1,10 +1,5 @@
 site_name: Afero Developer Portal
-theme:
-  name: material
-  palette:
-    scheme: slate
-    primary: deep orange
-    accent: green
+theme: readthedocs
 markdown_extensions:
   - admonition
   - toc:       
