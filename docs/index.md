@@ -6,7 +6,7 @@ We’ve built Afero to be accessible to a broad range of developers, from novice
 Quick Links
 -----------
 
-*   Afero mobile app for: [Android ![Download for Android](static/custom/images/android.svg =100x100)](https://play.google.com/store/apps/details?id=io.afero.tokui.prod.release) or [iOS ![Download for iOS](static/custom/images/apple.svg)](https://apps.apple.com/us/app/afero-iot-platform/id1065087421?ls=1) .
+*   Afero mobile app for: [Android ![Download for Android](<img src="static/custom/images/android.svg" alt="drawing" width="100"/>)](https://play.google.com/store/apps/details?id=io.afero.tokui.prod.release) or [iOS ![Download for iOS](static/custom/images/apple.svg)](https://apps.apple.com/us/app/afero-iot-platform/id1065087421?ls=1) .
 *   Afero Profile Editor for: [Windows ![Download for Windows](static/custom/images/windows.svg)](https://cdn.afero.io/latest-ape/win) or [macOS ![Download for Mac OS](static/custom/images/macos.svg)](https://cdn.afero.io/latest-ape/mac) .
 *   [GitHub Repositories](https://github.com/aferodeveloper)
 *   [Afero Development Hardware - BUY HERE!](Hardware)
