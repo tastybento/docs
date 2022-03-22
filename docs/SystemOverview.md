@@ -11,7 +11,7 @@ The Afero IoT Platform is vertically integrated, giving developers a solution th
 
 This vertical integration accelerates the creation of connected devices by minimizing the investment normally required for software development and testing – while making sure you have a secure and scalable solution.
 
-![System Architecture](/static/custom/images/Architecture.png)
+![System Architecture](static/custom/images/Architecture.png)
 
 Below you’ll find more detail on each of the components.
 
@@ -66,4 +66,4 @@ Updated July 30, 2021
 
 © 2015-2021 Afero | [Legal](https://www.afero.io/html/home/privacy.html) | [Privacy](https://www.afero.io/html/home/privacy.html#privacy) | [Afero Home](https://www.afero.io)
 
-[![Afero, Inc.](/static/aflib/images/afero-logo.svg)](/)
+[![Afero, Inc.](static/aflib/images/afero-logo.svg)](/)
