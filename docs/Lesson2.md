@@ -3,8 +3,7 @@ Tutorial 2: Creating a Device Profile
 
 Before you start, we assume that you’ve already run through [Tutorial 1: Linking Modulo](Lesson1). If not, please start there.
 
-!!! note
-This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for the Modulo-1B.
+!!! note This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for the Modulo-1B.
 
 
 1.  If you haven’t already, download the Afero Profile Editor, for [Windows](http://cdn.afero.io/latest-ape/win) or [macOS](http://cdn.afero.io/latest-ape/mac). Open and sign in to the Profile Editor. The Startup window appears:
@@ -17,21 +16,22 @@ This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for 
     4.  Back in the Afero Profile Editor Startup window, select the Open button, navigate to the directory where you unzipped the project, and select the directory that holds the Modulo project you want to use in this lesson.
 3.  Once the project is open, click Device Type in the Navigation pane in the left of the window. To be sure we’re all starting in the same view, your window should look something like this: ![Device Type Pane](static/custom/images/Mod2_DeviceType.png)
     
-    Notice the Module Type of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the New Profile window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
+    !!! Notice the Module Type of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the New Profile window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
     
       
+In the Device Type view, you can set the device name, type a detailed device description, and set the device icon. Of these items, only the icon will be visible to the end-user. Notice the Preview panel on the right of the view – it shows the selected device icon as it will appear in the mobile app.
     
-    In the Device Type view, you can set the device name, type a detailed device description, and set the device icon. Of these items, only the icon will be visible to the end-user. Notice the Preview panel on the right of the view – it shows the selected device icon as it will appear in the mobile app.
-    
-    Since we’re working with a pre-configured Profile, you don’t need to make any changes, but if you like, feel free to do so. When you’re finished, click Save to save any changes you might have made.
+Since we’re working with a pre-configured Profile, you don’t need to make any changes, but if you like, feel free to do so. When you’re finished, click Save to save any changes you might have made.
     
 4.  Click Attributes in the left-hand Navigation pane. You’ll see that the four Modulo GPIO pins are listed. Only two GPIO pins are needed for this project, pins 0 and 3. Click the On/Off switch to ON for these two pins; you’ll see them highlighted in the right-hand Preview pane:
     
     ![Preview Pane](static/custom/images/AttributeDefinition-Tut.png)
+    
 5.  For this project, we’ve defined two attributes: one for GPIO 0, which is connected to the LED on the Modulo; and one for GPIO 3, which is tied to the pushbutton. We’ll take a detailed look at the attributes now. Note that selected values are shown in white letters on an orange background.
     1.  Click LED Attribute, the attribute name for GPIO 0, to open its detailed view:
         
-        ![Attribute Definitions](static/custom/images/Tut2_LED_Attr.png)
+![Attribute Definitions](static/custom/images/Tut2_LED_Attr.png)
+
         *   Attribute Name is a required field for all attributes. We’ve named this one LED Attribute but you can change it in this field.
         *   To control the LED from the mobile app, Operation Mode must be Output. This is because Outputs are Read/Write, and sending a command from the mobile app requires writing to an attribute.
         *   GPIO 0 is given a Default Logic Level of 0, which sets the default state of the LED to OFF.
@@ -40,7 +40,8 @@ This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for 
         *   Don’t select any of the Bind to Attributes buttons.
     2.  Click Button Attribute, the attribute name for GPIO 3, to open its detailed view:
         
-        ![Attribute Definitions](static/custom/images/Tut2_Button_Attr.png)
+![Attribute Definitions](static/custom/images/Tut2_Button_Attr.png)
+
         *   Attribute Name is a required field for all attributes. We’ve named this one Button Attribute but you can change it here.
         *   Leave GPIO3 Operation Mode set to Input. This will display the state of the button when pressed in the mobile app.
         *   Change the Active setting to Low. When pressed, the button connects GPIO 3 to ground so the pin is considered active when it goes Low.
@@ -58,35 +59,36 @@ This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for 
     
       
     
-    1.  In the far-right pane under the heading Attribute Options, click the pencil icon in the LED:LED Attribute box to open its Attribute Option Details dialog:
+1.  In the far-right pane under the heading Attribute Options, click the pencil icon in the LED:LED Attribute box to open its Attribute Option Details dialog:
         
-        ![LED Attribute Options](static/custom/images/Les2-LEDAttrOpt.png)
+![LED Attribute Options](static/custom/images/Les2-LEDAttrOpt.png)
         
-        You will see that we have defined the following:
+You will see that we have defined the following:
+ 
+   *   The label for this control will display as “LED”.
+   *   The LED control is selected as Primary Operation, which means you can control the LED from the Home screen of the mobile app by double-tapping the device icon.
+   *   Note that two Value Options have been defined. These present the two different states the on-board LED can have: 1 is On, 0 is Off. You can edit the labels if you want, but keep the values as defined.
+   *   Check the Running State box next to the On state for the LED. This will change the color of the device in the mobile app when the LED is on.
+   *   We don’t need to complete the Range Options for this attribute since we’ll be using a Menu control, which does not require range definitions.
+   *   Click OK to close the Attribute Option Details dialog.
         
-        *   The label for this control will display as “LED”.
-        *   The LED control is selected as Primary Operation, which means you can control the LED from the Home screen of the mobile app by double-tapping the device icon.
-        *   Note that two Value Options have been defined. These present the two different states the on-board LED can have: 1 is On, 0 is Off. You can edit the labels if you want, but keep the values as defined.
-        *   Check the Running State box next to the On state for the LED. This will change the color of the device in the mobile app when the LED is on.
-        *   We don’t need to complete the Range Options for this attribute since we’ll be using a Menu control, which does not require range definitions.
-        *   Click OK to close the Attribute Option Details dialog.
+   Now, again in the far-right pane, click the pencil icon in the Button:Button Attribute box to open its Attribute Option Details dialog:
         
-        Now, again in the far-right pane, click the pencil icon in the Button:Button Attribute box to open its Attribute Option Details dialog:
-        
-        ![LED Attribute Options](static/custom/images/Les2-ButtonAttrOpt.png)
-        *   The label for this control will display as “Button”.
-        *   This attribute happens to have the same Value Options as the LED attribute, but is not set as the Primary Operation.
-        *   Again, we don't need any Range Options defined.
-        *   Click OK to close the Attribute Option Details dialog.
-    2.  Now we will assign a UI Control to each attribute. There are many types of UI Controls available, but in this project are using the Menu control for both.
-        
-        ![Menu Controls](static/custom/images/Dfn_UI_Ctls.png)
-        
-        Click the first attribute, LED Attribute (I/O 0): Menu, to open it for editing.
-        
-        ![LED Control](static/custom/images/AttributeDef-LED.png)
-        *   For attribute option we’ve selected LED, and for control type we’ve selected Menu.
-        *   For View Style, we’ve selected INLINE, which means all menu options will be shown. (Popup View Style means the end-user must tap the control to reveal all menu options.) You can see examples by expanding View Style Preview (shown in the screenshot above).
+   ![LED Attribute Options](static/custom/images/Les2-ButtonAttrOpt.png)
+   *   The label for this control will display as “Button”.
+   *   This attribute happens to have the same Value Options as the LED attribute, but is not set as the Primary Operation.
+   *   Again, we don't need any Range Options defined.
+   *   Click OK to close the Attribute Option Details dialog.
+2.  Now we will assign a UI Control to each attribute. There are many types of UI Controls available, but in this project are using the Menu control for both.
+   
+   ![Menu Controls](static/custom/images/Dfn_UI_Ctls.png)
+   
+   Click the first attribute, LED Attribute (I/O 0): Menu, to open it for editing.
+   
+   ![LED Control](static/custom/images/AttributeDef-LED.png)
+   
+   *   For attribute option we’ve selected LED, and for control type we’ve selected Menu.
+   *   For View Style, we’ve selected INLINE, which means all menu options will be shown. (Popup View Style means the end-user must tap the control to reveal all menu options.) You can see examples by expanding View Style Preview (shown in the screenshot above).
     
     Now click Button Attribute (I/O 3): Menu to open it.
     
@@ -99,22 +101,22 @@ This tutorial is designed for the Modulo-1 and Modulo-2 dev boards, but not for 
     
     The left-hand pane, Define the UI Control Groups, displays a representation of the device mobile app UI. At the top of both the mobile app and the Profile Editor is the “groups ribbon”; below are the controls for the selected group. Note that device Settings is a selection only shown in the mobile app groups ribbon, not in the Profile Editor.
     
-    1.  We’ve already set up two groups, shown in the groups ribbon and labeled **LED** and **Button**. (We’ve already created groups for this project, but if we hadn’t, you would click![](static/custom/images/AddGroupIcon.png)to create a new group.)
-        
-    2.  On the right, you’ll see all the controls you defined on the UI Controls window, identified by their Default Label. These are the controls available for grouping.
-    3.  Click the group labeled **LED** to make it active and ready for editing. The group will be highlighted in orange:
-        
-        ![UI Control Group](static/custom/images/Control_Groups_LED.png)
-        
-        Below the selected group, you’ll see the **LED** menu control. We’ve already moved the **LED** menu into the **LED** group, but if we hadn’t, you would add a control by dragging it from the Available UI Controls pane on the right into the controls display on the left, below the groups ribbon.
-        
-    4.  To remove a control from a group, simply drag it back to the Available UI Controls pane.
-        
-        A control can appear in multiple groups, but _must_ appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.
+   1.  We’ve already set up two groups, shown in the groups ribbon and labeled **LED** and **Button**. (We’ve already created groups for this project, but if we hadn’t, you would click![](static/custom/images/AddGroupIcon.png)to create a new group.)
+   
+   2.  On the right, you’ll see all the controls you defined on the UI Controls window, identified by their Default Label. These are the controls available for grouping.
+   3.  Click the group labeled **LED** to make it active and ready for editing. The group will be highlighted in orange:
+   
+   ![UI Control Group](static/custom/images/Control_Groups_LED.png)
+   
+   Below the selected group, you’ll see the **LED** menu control. We’ve already moved the **LED** menu into the **LED** group, but if we hadn’t, you would add a control by dragging it from the Available UI Controls pane on the right into the controls display on the left, below the groups ribbon.
+   
+   4.  To remove a control from a group, simply drag it back to the Available UI Controls pane.
+   
+   A control can appear in multiple groups, but _must_ appear in at least one group or it won’t appear at all in the mobile app UI. That means that even if you have just one UI control, you’ll need to create a UI control group to contain it.
         
           
         
-    5.  Click Save when you are finished defining UI control groups.
+   5.  Click Save when you are finished defining UI control groups.
 8.  Now that your device Profile is complete, click Publish in the left-hand Navigation pane to install it on your Modulo.
     
     If you intend to perform the next steps yourself (and you should!), you’ll need to set up some hardware:
