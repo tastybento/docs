@@ -31,38 +31,38 @@ For example, let’s say you create a project using Device Type “Motion Sensor
 
 Below is a matrix summarizing the constraints around the different cases. Note that in the cases where there is an existing Device Type, we assume it was defined in a profile that has been **published** to a device.
 
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Case</th>
-                            <th>Create New Project</th>
-                            <th>Clone Existing Project</th>
-                            <th>Open&nbsp;Local&nbsp;Project</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Device&nbsp;Type&nbsp;doesn’t&nbsp;exist.</td>
-                            <td>New project is created.</td>
-                            <td>Cloned project is opened.</td>
-                            <td>Project is opened.</td>
-                        </tr>
-                        <tr>
-                            <td>Device Type + Module Type does exist.</td>
-                            <td><p>Before proceeding past the New Project dialog, you are notified that a project using that Device Type (+ Module Type) already exists and are asked to confirm that you want to use it. If you confirm, the Profile you create with this new project will replace the Profile already on the device.</p>
-                            <p>Alternatively, you can provide a new Device Type name and could select a different Module Type.</p></td>
-                            <td><p>Before proceeding past the Clone Project dialog, you are notified that a project using that Device Type (+ Module Type) already exists and are asked to confirm that you want to use it. If you confirm, the Profile you create with this cloned project will replace the Profile already on the device.</p>
-                            <p>Alternatively, you can provide a new Device Type name and could select a different Module Type.</p></td>
-                            <td>Project is opened.</td>
-                        </tr>
-                        <tr>
-                            <td>Device Type does exist but with different Module Type.</td>
-                            <td>Before proceeding past the New Project dialog, you are asked to create a new Device Type or select the Module Type currently associated with the Device Type.</td>
-                            <td>Before proceeding past the Clone Project dialog, you are asked to create a new Device Type or select the Module Type currently associated with the Device Type.</td>
-                            <td>Project is opened to the Device Type window, but you cannot proceed until you provide a new Device Type name.</td>
-                        </tr>                                               
-                    </tbody>
-                </table>
+<table>
+    <thead>
+        <tr>
+            <th>Case</th>
+            <th>Create New Project</th>
+            <th>Clone Existing Project</th>
+            <th>Open&nbsp;Local&nbsp;Project</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Device&nbsp;Type&nbsp;doesn’t&nbsp;exist.</td>
+            <td>New project is created.</td>
+            <td>Cloned project is opened.</td>
+            <td>Project is opened.</td>
+        </tr>
+        <tr>
+            <td>Device Type + Module Type does exist.</td>
+            <td><p>Before proceeding past the New Project dialog, you are notified that a project using that Device Type (+ Module Type) already exists and are asked to confirm that you want to use it. If you confirm, the Profile you create with this new project will replace the Profile already on the device.</p>
+            <p>Alternatively, you can provide a new Device Type name and could select a different Module Type.</p></td>
+            <td><p>Before proceeding past the Clone Project dialog, you are notified that a project using that Device Type (+ Module Type) already exists and are asked to confirm that you want to use it. If you confirm, the Profile you create with this cloned project will replace the Profile already on the device.</p>
+            <p>Alternatively, you can provide a new Device Type name and could select a different Module Type.</p></td>
+            <td>Project is opened.</td>
+        </tr>
+        <tr>
+            <td>Device Type does exist but with different Module Type.</td>
+            <td>Before proceeding past the New Project dialog, you are asked to create a new Device Type or select the Module Type currently associated with the Device Type.</td>
+            <td>Before proceeding past the Clone Project dialog, you are asked to create a new Device Type or select the Module Type currently associated with the Device Type.</td>
+            <td>Project is opened to the Device Type window, but you cannot proceed until you provide a new Device Type name.</td>
+        </tr>               
+    </tbody>
+</table>
 
 Open or Clone a Project
 -----------------------
