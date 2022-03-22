@@ -34,27 +34,29 @@ Since we’re working with a pre-configured Profile, you don’t need to make an
     ![Preview Pane](static/custom/images/AttributeDefinition-Tut.png)
     
 5.  For this project, we’ve defined two attributes: one for GPIO 0, which is connected to the LED on the Modulo; and one for GPIO 3, which is tied to the pushbutton. We’ll take a detailed look at the attributes now. Note that selected values are shown in white letters on an orange background.
-    1.  Click LED Attribute, the attribute name for GPIO 0, to open its detailed view:
+   1.  Click LED Attribute, the attribute name for GPIO 0, to open its detailed view:
         
 ![Attribute Definitions](static/custom/images/Tut2_LED_Attr.png)
 
-        *   Attribute Name is a required field for all attributes. We’ve named this one LED Attribute but you can change it in this field.
-        *   To control the LED from the mobile app, Operation Mode must be Output. This is because Outputs are Read/Write, and sending a command from the mobile app requires writing to an attribute.
-        *   GPIO 0 is given a Default Logic Level of 0, which sets the default state of the LED to OFF.
-        *   Leave both Options, PWM (pulse-width modulation) and Pulse, deselected.
-        *   Change the Active selector set to Low. Because the cathode of the LED is connected to GPIO 0, the LED turns on when the pin goes Low.
-        *   Don’t select any of the Bind to Attributes buttons.
-    2.  Click Button Attribute, the attribute name for GPIO 3, to open its detailed view:
+   *   Attribute Name is a required field for all attributes. We’ve named this one LED Attribute but you can change it in this field.
+   *   To control the LED from the mobile app, Operation Mode must be Output. This is because Outputs are Read/Write, and sending a command from the mobile app requires writing to an attribute.
+   *   GPIO 0 is given a Default Logic Level of 0, which sets the default state of the LED to OFF.
+   *   Leave both Options, PWM (pulse-width modulation) and Pulse, deselected.
+   *   Change the Active selector set to Low. Because the cathode of the LED is connected to GPIO 0, the LED turns on when the pin goes Low.
+   *   Don’t select any of the Bind to Attributes buttons.
+   
+   2.  Click Button Attribute, the attribute name for GPIO 3, to open its detailed view:
         
 ![Attribute Definitions](static/custom/images/Tut2_Button_Attr.png)
 
-        *   Attribute Name is a required field for all attributes. We’ve named this one Button Attribute but you can change it here.
-        *   Leave GPIO3 Operation Mode set to Input. This will display the state of the button when pressed in the mobile app.
-        *   Change the Active setting to Low. When pressed, the button connects GPIO 3 to ground so the pin is considered active when it goes Low.
-        *   The Pull Up setting is required for to keep the GPIO pin inactive when the button is not pressed.
-        *   With Is Toggle set, the status displayed by the mobile app will switch with every momentary button push. If Is Toggle is not set, the state displayed will always reflect the current button state.
-        *   Leave the Debounce Time set to 0, the Active selector set to High, and don’t select any of the Bind to Attributes buttons.
-    3.  Click Save when you are finished defining project attributes.
+   *   Attribute Name is a required field for all attributes. We’ve named this one Button Attribute but you can change it here.
+   *   Leave GPIO3 Operation Mode set to Input. This will display the state of the button when pressed in the mobile app.
+   *   Change the Active setting to Low. When pressed, the button connects GPIO 3 to ground so the pin is considered active when it goes Low.
+   *   The Pull Up setting is required for to keep the GPIO pin inactive when the button is not pressed.
+   *   With Is Toggle set, the status displayed by the mobile app will switch with every momentary button push. If Is Toggle is not set, the state displayed will always reflect the current button state.
+   *   Leave the Debounce Time set to 0, the Active selector set to High, and don’t select any of the Bind to Attributes buttons.
+   
+   3.  Click Save when you are finished defining project attributes.
 
 6.  To move on to defining the mobile app UI for this project, click UI Controls in the left-hand Navigation pane.
     
@@ -97,13 +99,14 @@ You will see that we have defined the following:
    *   For attribute option we’ve selected LED, and for control type we’ve selected Menu.
    *   For View Style, we’ve selected INLINE, which means all menu options will be shown. (Popup View Style means the end-user must tap the control to reveal all menu options.) You can see examples by expanding View Style Preview (shown in the screenshot above).
     
-    Now click Button Attribute (I/O 3): Menu to open it.
+   Now click Button Attribute (I/O 3): Menu to open it.
     
-    ![Button Attribute](static/custom/images/AttributeDef-Button.png)
+   ![Button Attribute](static/custom/images/AttributeDef-Button.png)
     
-    Notice that we’ve also selected the INLINE View Style.
+   Notice that we’ve also selected the INLINE View Style.
     
-    6.  Click Save when you are finished defining UI controls.
+   6.  Click Save when you are finished defining UI controls.
+   
 7.  Click UI Control Groups in the left-hand Navigation pane to group your controls.
     
     The left-hand pane, Define the UI Control Groups, displays a representation of the device mobile app UI. At the top of both the mobile app and the Profile Editor is the “groups ribbon”; below are the controls for the selected group. Note that device Settings is a selection only shown in the mobile app groups ribbon, not in the Profile Editor.
