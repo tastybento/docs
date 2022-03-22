@@ -10,15 +10,19 @@ Before you start, we assume that you’ve already run through [Tutorial 1: Linki
 1.  If you haven’t already, download the Afero Profile Editor, for [Windows](http://cdn.afero.io/latest-ape/win) or [macOS](http://cdn.afero.io/latest-ape/mac). Open and sign in to the Profile Editor. The Startup window appears:
     
     ![Startup Window](static/custom/images/APE-StartScreen-Tut.png)
+    
 2.  For the purposes of this tutorial, we’re going to save you some typing by providing a pre-configured Modulo project.
     1.  First, you will need the appropriate Sample Project. The easiest way to get this is from the Profile Editor system Tools menu. From this menu, select Sample Projects > [GitHub Repository](http://github.com/aferodeveloper/APE-Project-Profiles). (All Modulo projects, and more, are available from this GitHub repository.)
     2.  On the GitHub web page that opens, click the green Clone or download button then select Download ZIP. Navigate to your Profile Editor project directory to save the zip file.
     3.  Once saved, go to the Profile Editor project directory on your filesystem and double-click the file to decompress it. You can keep all the projects in the unzipped project profiles directory, or delete the projects you’re not interested in.
     4.  Back in the Afero Profile Editor Startup window, select the Open button, navigate to the directory where you unzipped the project, and select the directory that holds the Modulo project you want to use in this lesson.
-3.  Once the project is open, click Device Type in the Navigation pane in the left of the window. To be sure we’re all starting in the same view, your window should look something like this: ![Device Type Pane](static/custom/images/Mod2_DeviceType.png)
+
+3.  Once the project is open, click Device Type in the Navigation pane in the left of the window. To be sure we’re all starting in the same view, your window should look something like this:
+
+![Device Type Pane](static/custom/images/Mod2_DeviceType.png)
     
-   !!!! note
-        Notice the Module Type of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the New Profile window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
+!!!! note
+     Notice the Module Type of the Profile is specified right at the top of the pane (in the example, we’re working with a Modulo-2.) This module type was specified in the pre-built Profile you downloaded; when creating a Profile from scratch, you must specify the module type right from the beginning. Doing so is the first step in the New Profile window. It’s critical that the module type in the Profile match the hardware you’re using in your project!
     
       
 In the Device Type view, you can set the device name, type a detailed device description, and set the device icon. Of these items, only the icon will be visible to the end-user. Notice the Preview panel on the right of the view – it shows the selected device icon as it will appear in the mobile app.
@@ -51,6 +55,7 @@ Since we’re working with a pre-configured Profile, you don’t need to make an
         *   With Is Toggle set, the status displayed by the mobile app will switch with every momentary button push. If Is Toggle is not set, the state displayed will always reflect the current button state.
         *   Leave the Debounce Time set to 0, the Active selector set to High, and don’t select any of the Bind to Attributes buttons.
     3.  Click Save when you are finished defining project attributes.
+
 6.  To move on to defining the mobile app UI for this project, click UI Controls in the left-hand Navigation pane.
     
     You will probably not be surprised to find that two UI controls have been defined since our project uses two attributes. It’s common, though not a rule, to have one UI control for every attribute. As examples: some attribute values will be used “behind-the-scenes” to calculate the values of other attributes, and you can assign the same control to multiple attributes and multiple controls to the same attribute.
