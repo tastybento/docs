@@ -3,7 +3,7 @@ MCU Coding Tips
 
 Please factor in the following information when writing your MCU code:
 
-[toc]
+[TOC]
 
 Don’t Forget to Call af\_lib\_loop()
 ------------------------------------
