@@ -26,7 +26,7 @@ Scaling to Mass Production
 
 Afero scales from individual maker prototypes to millions of units. We’ve partnered with Murata and Microchip, two of the most trusted names in electronics manufacturing, to produce our development boards and modules.
 
-Next: [Afero IoT Platform Overview](/SystemOverview)
+Next: [Afero IoT Platform Overview](SystemOverview)
 
 Updated July 30, 2021
 
@@ -34,4 +34,4 @@ Updated July 30, 2021
 
 © 2015-2021 Afero | [Legal](https://www.afero.io/html/home/privacy.html) | [Privacy](https://www.afero.io/html/home/privacy.html#privacy) | [Afero Home](https://www.afero.io)
 
-[![Afero, Inc.](/static/aflib/images/afero-logo.svg)](/)
+[![Afero, Inc.](static/aflib/images/afero-logo.svg)](/)

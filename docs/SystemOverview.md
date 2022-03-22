@@ -25,11 +25,11 @@ To build or prototype Afero powered, connected products, you can choose from the
 *   An Afero Plinto development board, to be used in conjunction with an Arduino board.
 *   An Afero Secure Radio module (ASR-1 or ASR-2KL), to be directly integrated into a product and used either standalone (multiple I/O ports provided) or in conjunction with a host microcontroller.
 
-You can order Afero development boards and tools using the vendors and part numbers listed on the [Afero Hardware Products](/Hardware) page.
+You can order Afero development boards and tools using the vendors and part numbers listed on the [Afero Hardware Products](Hardware) page.
 
 The Afero Secure Radio (ASR) can be embedded in new and existing product designs. It comes programmed with authentication, encryption, and connection management software, ensuring a reliable connection to the Afero Cloud.
 
-Read more about our development tools in the [Profile Editor User Guide](/Projects), the [Inspector User Guide](/Inspector), the [Console User Guide](/Console), and [Afero Cloud API](/CloudAPIs).
+Read more about our development tools in the [Profile Editor User Guide](Projects), the [Inspector User Guide](Inspector), the [Console User Guide](Console), and [Afero Cloud API](CloudAPIs).
 
 Your Connected Product
 ----------------------
@@ -58,7 +58,7 @@ The Afero Cloud provides secure, managed services:
 
 Our Secure RESTful API is SSL encrypted and protected using the two-legged authentication model of the OAuth 2.0 specification. The Cloud API lets you securely authenticate your customers using custom applications so they can control the Afero powered devices associated with their accounts.
 
-Next: [Core Development Concepts](/CoreConcepts)
+Next: [Core Development Concepts](CoreConcepts)
 
 Updated July 30, 2021
 
